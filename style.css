@@ -1,0 +1,71 @@
+body{
+    background-image:url('https://wallpapercave.com/wp/wp9147294.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+h1, footer {
+    text-align: center;
+    color: white;
+}
+h2 {
+  text-align: left;
+  font-size: small;
+  color: white;
+}
+
+/* Set background color for nav bar */
+.topnav {
+  background-color: #6b4984;
+  overflow: hidden;
+  opacity: 95%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #926bae;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #432d52;
+  color: white;
+  opacity: 100%;
+}
+
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: white;
+}
+img {
+  height: 200px;
+  margin: auto;
+}
+
+h1 {
+  text-shadow: 4px 4px 4px #000000;
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.dayinthelifevideo{
+  color:#926bae;
+}
+
+.floatright {
+  float: right;
+  clear: right;
+  margin: 10px;
+}
