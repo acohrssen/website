@@ -4,15 +4,7 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
   }
-h1, footer {
-    text-align: center;
-    color: white;
-}
-h2 {
-  text-align: left;
-  font-size: small;
-  color: white;
-}
+
 
 /* Set background color for nav bar */
 .topnav {
@@ -58,6 +50,17 @@ h1 {
   color: rgb(255, 255, 255);
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+h1, footer {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-align: left;
+  font-size: small;
+  color: white;
 }
 
 .floatright {
