@@ -69,5 +69,8 @@ section {
   box-shadow: 5px 5px 5px #888888;
 }
 
-
+img {
+  height: 200px;
+  margin: auto;
+}
 
