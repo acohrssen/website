@@ -43,6 +43,13 @@ h3 {
   margin-bottom: 0px; 
 }
 
+h4 {
+  font-family: arial, helvetica, geneva, sans-serif;
+  margin-top: 5px; 
+  margin-bottom: 0px; 
+}
+
+
 header {
   border-bottom-style: solid;
   border-bottom-width: 5px;
