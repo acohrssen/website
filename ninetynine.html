@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Title</title>
+<title>99 Buckets</title>
 <style>
 h1, footer {
     text-align: center;
@@ -25,8 +25,26 @@ window.onload = init;
 </script>
 </head>
 <body>
-<h1>Title</h1>
+<h1>99 Buckets</h1>
+var drink = "sunblock";
+var lyrics = "";
+var cans = 99;
+while (cans > 0) {
+	lyrics = lyrics + cans + " buckets of " + drink + " on the hill <br>";
+	lyrics = lyrics + cans + " buckets of " + drink + "<br>";
+	lyrics = lyrics + "kick one down, knock it around, <br>";
+	if (cans > 1) {
+		lyrics = lyrics + (cans-1) + " buckets of " + drink + " on the hill <br>";
+	}
+	else {
+		lyrics = lyrics + "No more buckets of " + drink + " on the hill <br>";
+	}
+	cans = cans - 1;
+}
+document.write(lyrics);
 
+
+document.getElementById("song").innerHTML = lyrics;
 <footer>
 <a id="vLink1"><strong> HTML </strong> Valid! </a> |
 <a id="vLink2"><strong> CSS </strong> Valid! </a>
