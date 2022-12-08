@@ -40,29 +40,23 @@ window.onload = init;
     <a href="dinosaurgame.html">Dinosaur Game Test</a>
     <a href="https://acrisafulli.github.io/atechcapstone/">Capstone Project</a>
     <a href="rebrand.html">Rebrand</a>
-    <a class="active" href="ninetynine.html">99 BUckets</a>
+    <a href="ninetynine.html">99 BUckets</a>
+    <a href="planets.html">Planets</a>
+    <a class="active" href="buzzwords.html">Buzzwords</a>
     </div>
-<h1>99 Buckets</h1>  
+<h1>Buzzwords</h1>  
 <script>
-var drink = "sunblock";
-var lyrics = "";
-var cans = 99;
-while (cans > 0) {
-	lyrics = lyrics + cans + " buckets of " + drink + " on the hill <br>";
-	lyrics = lyrics + cans + " buckets of " + drink + "<br>";
-	lyrics = lyrics + "kick one down, knock it around, <br>";
-	if (cans > 1) {
-		lyrics = lyrics + (cans-1) + " buckets of " + drink + " on the hill <br>";
-	}
-	else {
-		lyrics = lyrics + "No more buckets of " + drink + " on the hill <br>";
-	}
-	cans = cans - 1;
-}
-document.write(lyrics);
+function makePhrases() {
+var words1 = ["24/7", "multi-Tier", "30,000 foot", "B-to-B", "win-win"];
+var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+var rand1 = Math.floor(Math.random() * words1.length); var rand2 = Math.floor(Math.random() * words2.length); var rand3 = Math.floor(Math.random() * words3.length);
+var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3]; var phraseElement = document.getElementById("phrase");
+} phraseElement.innerHTML = phrase;
+window.onload = makePhrases;
 
 
-document.getElementById("song").innerHTML = lyrics;
+
 </script>
 
 <footer>
