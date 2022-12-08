@@ -20,6 +20,18 @@ body {
 }
 </style>
 <script>
+function makePhrases() {
+  var words1 = ["The Windex", "The goose", "The charger", "The cups", "The cow"];
+  var words2 = ["is tired", "is happy", "is energetic", "is sad", "is silly"];
+  var words3 = ["right now", "and wants to go to Disney World", "and is purple", "and took a walk", "and said, woot woot!"];
+  var rand1 = Math.floor(Math.random() * words1.length); 
+  var rand2 = Math.floor(Math.random() * words2.length); 
+  var rand3 = Math.floor(Math.random() * words3.length);
+  var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3]; 
+  var phraseElement = document.getElementById("phrase");
+  phraseElement.innerHTML = phrase;
+}  
+
 function init() {
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
@@ -45,29 +57,11 @@ window.onload = init;
     <a href="planets.html">Planets</a>
     <a class="active" href="buzzwords.html">Buzzwords</a>
     </div>
+    <h1>Phrase-o-Matic says:</h1>
+    <p id="phrase"></p>  
 </body>
 <h1>Buzzwords</h1>  
-<script>
-function makePhrases() {
-  var words1 = ["The Windex", "The goose", "The charger", "The cups", "The cow"];
-  var words2 = ["is tired", "is happy", "is energetic", "is sad", "is silly"];
-  var words3 = ["right now", "and wants to go to Disney World", "and is purple", "and took a walk", "and said, woot woot!"];
-  var rand1 = Math.floor(Math.random() * words1.length); 
-  var rand2 = Math.floor(Math.random() * words2.length); 
-  var rand3 = Math.floor(Math.random() * words3.length);
-  var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3]; 
-  var phraseElement = document.getElementById("phrase");
-  phraseElement.innerHTML = phrase;
-}  
 
-
-
-
-</script>
-<body>
-  <h1>Phrase-o-Matic says:</h1>
-  <p id="phrase"></p>
-</body>
   
  
 <footer>
