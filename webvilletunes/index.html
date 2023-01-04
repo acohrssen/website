@@ -23,6 +23,10 @@ var songName = textInput.value;
 } else {
   alert("adding " + songName);
 }
+var li = document.createElement("li");
+li.innerHTML = songName;
+var ul = document.getElementById("playlist"); 
+ul.appendChild(li);
 }
   </script>
   <form>
