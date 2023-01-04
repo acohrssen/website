@@ -16,8 +16,14 @@
       button.onclick = handleButtonClick;
     }
     function handleButtonClick() {
-      alert("Adding");
-    }
+var textInput = document.getElementById("songTextInput");
+var songName = textInput.value;
+ if (songName == "") {
+  alert("Please enter a song");
+} else {
+  alert("adding " + songName);
+}
+}
   </script>
   <form>
     <input type="text" id="songTextInput" size="40" placeholder="Song name">
