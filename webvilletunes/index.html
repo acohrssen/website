@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="playlist.css">
 </head>  
 <body>
+  <script>
+    window.onload = init;
+    function init() {
+      var button = document.getElementById("addButton");
+      button.onclick = handleButtonClick;
+    }
+    function handleButtonClick() {
+      alert("Button was clicked!");
+    }
+  </script>
   <form>
     <input type="text" id="songTextInput" size="40" placeholder="Song name">
     <input type="button" id="addButton" value="add Song">
