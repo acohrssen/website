@@ -40,6 +40,9 @@ var songName = textInput.value;
 } else {
   alert("adding " + songName);
 }
+if (songName == "")  {
+  var li=document.createElement("")
+}
 var li = document.createElement("li");
 li.innerHTML = songName;
 var ul = document.getElementById("playlist"); 
