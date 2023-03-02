@@ -8,6 +8,15 @@
 	#div1 {width:350px;height:350px;padding:10px;border:1px solid #aaaaaa;}
 </style>
 <script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
 function allowDrop(ev)
 	{
 		ev.preventDefault();
@@ -27,13 +36,28 @@ function drop(ev)
 </script>
 </head>
 <body>
+	<div class="topnav">
+		<a href="https://acohrssen.github.io/website/">Home</a>
+		<a href="tkd.html">Tae Kwon Do</a>
+		<a href="webdevgoals.html">Web Design Goals</a>
+		<a class="active" href="aboutme.html">About Me</a>
+		<a href="dinosaurgame.html">Dinosaur Game Test</a>
+		<a href="https://acrisafulli.github.io/atechcapstone/">Capstone Project</a>
+		<a href="rebrand.html">Rebrand</a>
+		<a href="ninetynine.html">99 BUckets</a>
+		<a href="shortcut.html">Short Cut</a>
+		<a class="active" href="Drag_and_Drop.html">Drag and Drop</a>
+		</div>
 
 	<p>Drag the Dog image into the rectangle:</p>
 
 	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	<br />
 	<img id="drag1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8xHbxKrY7d4gsjtUmwCBUsTkILepyF7a2QdV2YJI7b5zYNf3dxMwagAIoKsm9_gwe8U:https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg&usqp=CAU" alt="dog" draggable="true" ondragstart="drag(event)" width="336" height="300" />
-
+<footer>
+	<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+	<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
 </body>
 </html>
 
