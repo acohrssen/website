@@ -63,6 +63,12 @@ h2 {
   color: white;
 }
 
+li {
+  text-align: left;
+  color:aqua;
+  font-size:small'
+}
+
 .floatright {
   float: right;
   clear: right;
