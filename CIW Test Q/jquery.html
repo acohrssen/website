@@ -33,23 +33,8 @@ function init() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 }
-window.onload = init;
-function allowDrop(ev)
-	{
-		ev.preventDefault();
-	}
 
-function drag(ev)
-	{
-		ev.dataTransfer.setData("Text",ev.target.id);
-	}
 
-function drop(ev)
-	{
-		var data=ev.dataTransfer.getData("Text");
-		ev.target.appendChild(document.getElementById(data));
-		ev.preventDefault();
-	}
 </script>
 </head>
 <body>
@@ -62,17 +47,6 @@ function drop(ev)
 	</div>
 	
 
-	<p>Drag the Dog image into the rectangle:</p>
-	<p>The HTML5 Drag-and-Drop API allows users to drag elements to another location on a Webpage or to an external application. Which attribute enables an element to be moved?</p>
-	<p>a. id=”draggable” </p>
-	<p>b. onclick=”drag” 
-	<p>c. draggable=”yes”</p> 
-	<p>d. draggable=”true"</p>
-	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-	<br>
-	<img id="drag1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8xHbxKrY7d4gsjtUmwCBUsTkILepyF7a2QdV2YJI7b5zYNf3dxMwagAIoKsm9_gwe8U:https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg&usqp=CAU" alt="dog" draggable="true" ondragstart="drag(event)" width="300" height="200" >
-	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-	<p>Flip between the two boxes</p>
 <footer>
 	<a id="vLink1"><strong> HTML </strong> Valid! </a> |
 	<a id="vLink2"><strong> CSS </strong> Valid! </a>
