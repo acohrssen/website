@@ -65,8 +65,13 @@ h2 {
 
 li {
   text-align: left;
-  color:aqua;
-  font-size:small
+  color:rgb(0, 17, 255);  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+p {
+font-family: 'Courier New', Courier, monospace;
 }
 
 .floatright {
