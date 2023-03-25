@@ -37,10 +37,7 @@ body{
     color: white;
   }
 
-footer>a, footer>a:visited {
-    text-decoration: none;
-    color: white;
-}
+
 img {
   height: 200px;
   margin: auto;
