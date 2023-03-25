@@ -14,7 +14,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 20%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -60,13 +60,13 @@ h1, footer {
 }
 
 h2 {
-  text-align: left;
+  text-align: center;
   font-size: small;
   color: white;
 }
 
 li {
-  text-align: left;
+  text-align: center;
   color:rgb(255, 255, 255);  
   font-family: 'Courier New', Courier, monospace;
 }
