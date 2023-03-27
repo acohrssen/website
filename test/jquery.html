@@ -4,24 +4,16 @@
 <meta charset="utf-8">
 <script src="https://d1hjkbq40fs2x4.cloudfront.net/2021-10-28/files/blue-white-waterfall-photography_2173-01.jpg"></script>
 <link rel="stylesheet" href="style1.css">
-<style>
-	body {
-  background-image: url('https://d1hjkbq40fs2x4.cloudfront.net/2021-10-28/files/blue-white-waterfall-photography_2173-01.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
-<script>
 
-$(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
-  });
-});
-</script>
+
+
 <script>
 	function init() {
+		$(document).ready(function(){
+			 $("p").click(function(){
+				 $(this).hide();
+				});
+			});
 	var loc = window.location.href;
 	var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
 	var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
