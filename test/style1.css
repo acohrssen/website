@@ -81,3 +81,7 @@ text-align: center;
   clear: right;
   margin: 10px;
 }
+
+button {
+    color: aliceblue;
+}
